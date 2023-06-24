@@ -19,7 +19,7 @@ Please, cite this article if you use codes in <i>attomo</i>.
 
 <code> conda activate attomo </code>
 
-(4) Set up <i>attomo</i> module by running:
+(4) Set up <i>attomo</i> module (developer mode) by running:
 
 <code> pip install -e . </code>
 
