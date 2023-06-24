@@ -26,5 +26,5 @@ and select the notebooks.
 
 ### Data:
 
-This public version of the code is written to use the ultrasound signals computed from the <a href="http://www.k-wave.org/">k-Wave<a> open-source wave propagation simulator. The Matlab script used to generate the necessary data can be found in: 
+This public version of the code is written to use the ultrasound signals computed from the <a href="http://www.k-wave.org/">k-Wave</a> open-source wave propagation simulator. The Matlab script used to generate the necessary data can be found in <a href="data/Script_kWave_simulation.m">./data/Script_kWave_simulation.m </a>.
 
