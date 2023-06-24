@@ -21,7 +21,7 @@ A Python package for tissue attenuation imaging with Pulse-Echo Ultrasound Atten
 
 <code> jupyter-notebook </code>
 
-and select the notebooks.
+and select the notebooks (e.g., <a href="Attenuation_tomography.ipynb"> Attenuation_tomography.ipynb </a>).
 
 
 ### Data:
