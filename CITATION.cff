@@ -6,6 +6,6 @@ authors:
   orcid: "https://orcid.org/0000-0002-7970-7900"
 title: "attomo - a tool for pulse-echo ultrasound attenuation tomography"
 version: 0.1.0
-doi: tba
-date-released: 2023-06-01
+doi: 10.5281/zenodo.8077237
+date-released: 2023-06-24
 url: "https://github.com/naiarako/attomo"
