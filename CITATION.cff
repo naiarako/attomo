@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Korta Martiartu"
+  given-names: "Naiara"
+  orcid: "https://orcid.org/0000-0002-7970-7900"
+title: "attomo - a tool for pulse-echo ultrasound attenuation tomography"
+version: 0.1.0
+doi: tba
+date-released: 2023-06-01
+url: "https://github.com/naiarako/attomo"
