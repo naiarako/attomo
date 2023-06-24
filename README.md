@@ -1,8 +1,10 @@
 # attomo
 
-A Python package for tissue attenuation imaging with Pulse-Echo Ultrasound Attenuation Tomography technique. Theory and implementation details of this method are carefully described in 
+A Python package for tissue attenuation imaging with Pulse-Echo Ultrasound Attenuation Tomography technique. The method and implementation details are carefully described in 
 
 > [tba].
+
+Please, cite this article if you use codes in <i>attomo</i>.
 
 
 ### Installation
@@ -17,11 +19,17 @@ A Python package for tissue attenuation imaging with Pulse-Echo Ultrasound Atten
 
 <code> conda activate attomo </code>
 
-(4) You are now ready to run the self-explanatory jupyter notebooks! Just type
+(4) Set up <i>attomo</i> module (developer mode) by running:
+
+<code> pip install -e . </code>
+
+in this directory.
+
+(5) You are now ready to run the self-explanatory jupyter notebooks! Just type
 
 <code> jupyter-notebook </code>
 
-and select the notebooks (e.g., <a href="Attenuation_tomography.ipynb"> Attenuation_tomography.ipynb </a>).
+and select the notebooks (e.g., <a href="Attenuation_tomography.ipynb">Attenuation_tomography.ipynb</a>).
 
 
 ### Data:
