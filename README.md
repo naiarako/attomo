@@ -4,16 +4,16 @@ A Python package for tissue attenuation imaging with Pulse-Echo Ultrasound Atten
 
 > [tba].
 
-Please, cite this article if you use codes in <i>attomo</i>.
+Please cite this article if you use codes in <i>attomo</i>.
 
 
 ### Installation
 
 (1) If required, set up python by installing the latest <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> distribution.
 
-(2) All required packages can be installed by creating a new enviroment for <i>attomo</i> as
+(2) All required packages can be installed by creating a new environment for <i>attomo</i> as
 
-<code> conda env create -f environment_cute_cpu(gpu).yml </code>
+<code> conda env create -f environment_attomo_cpu(gpu).yml </code>
 
 (3) Activate the environment:
 
