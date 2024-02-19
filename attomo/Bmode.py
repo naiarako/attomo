@@ -41,13 +41,16 @@ class Bmode:
 
         self.system = system
 
-    def load_data(self, path, filename, use_filter=False):
+    def load_data(self, path, filename, use_filter=False, filter_type='high', cutoff_freq=0.2e7):
 
         """
         Load matlab file with acquisition info and data and define object attributes
         :param path: path to the folder containing .mat file [string]
         :param filename: name of the matlab file with .mat extension [string]
         :param use_filter: use band-pass filter in the data [boolean]
+        :param filter_type: string indicating type of filter: 'bandpass', 'high', or 'low'
+        :param cutoff_freq: float (for 'high' and 'low') or list of two-floats (for 'bandpass') indicating the
+        cute-off frequencies.
         """
 
         start = timeit.default_timer()  # start counting run time
@@ -72,15 +75,15 @@ class Bmode:
 
             self.apodtan = np.tan(35 * np.pi / 180)  # element apodization
 
-            self.fsampling = 1/(2*float(mat['properties']['dt'][0, 0][0, 0]))  # sampling frequency [Hz]
+            self.fsampling = 1/(3*float(mat['properties']['dt'][0, 0][0, 0]))  # sampling frequency [Hz]
 
             # rf-signals [time, elem, angle]
-            data = mat['scan_lines'][::2, :, :]
+            data = mat['scan_lines'][::3, :, :]
 
             # Filter:
             if use_filter:
                 nyq = 0.5 * self.fsampling
-                ba = signal.butter(8, 0.3e7 / nyq, btype='high', output='ba')
+                ba = signal.butter(8, cutoff_freq / nyq, btype=filter_type, output='ba')
                 data_f = signal.filtfilt(ba[0], ba[1], np.real(data), axis=0)
                 data = data_f
 
